@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Natural Language Processing with Disaster Tweets</title>
+
+<body>
+
+<h2> Classify Whether the Tweet is About Real Disaster or Not</h1>
+<h5>Predict 1, if Tweet is about a real Disaster</h5>
+<h5>Predict 0, if Tweet is about not a Real Disaster</h5>
+<div class="ml-container">
+
+    <form action="{{ url_for('predict')}}" method="POST">
+    <p>Enter Your Message Here</p>
+    <!-- <input type="text" name="comment"/> -->
+    <textarea name="message" rows="4" cols="50"></textarea>
+    <br/>
+
+    <input type="submit" class="btn-info" value="predict">
+    
+</form>
+
+</body>
+</head>
+</html>

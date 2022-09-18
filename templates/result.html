@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	body {background-color: aquamarine;}
+</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Natural Language Processing Application
+		</div>
+		<h2 style="color:blue;font-size:20;text-align: center;"><b>Classify Whether the Tweet is About Real Disaster or Not </b></h2>
+
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">REAL DISASTER</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">NOT A REAL DISASTER</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
